@@ -1,0 +1,61 @@
+# FBX to MDL Converter Requirements
+# Core dependencies for 3D model processing and conversion
+
+# Blender as a Python module for FBX parsing
+# Note: Install with: pip install bpy
+# Alternative installation: https://pypi.org/project/bpy/
+bpy>=3.6.0
+
+# Numerical computations for vertex processing
+numpy>=1.21.0
+
+# Pillow for image/texture processing
+Pillow>=9.0.0
+
+# Optional: mathutils (usually comes with bpy)
+# mathutils>=2.81.2
+
+# Development and testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code quality tools
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
+
+# Additional utilities
+argparse  # Usually built-in, but included for clarity
+pathlib   # Usually built-in, but included for clarity
+dataclasses  # Usually built-in for Python 3.7+
+
+# Optional: For advanced FBX parsing if bpy is not available
+# FBX SDK Python bindings (platform-specific)
+# fbx>=2020.3.4  # Uncomment if using Autodesk FBX SDK
+
+# Optional: For 3D math operations
+# scipy>=1.9.0
+
+# Optional: For progress bars in CLI
+# tqdm>=4.64.0
+
+# Optional: For color terminal output
+# colorama>=0.4.5
+
+# Note: bpy (Blender as Python module) installation instructions:
+# 
+# Method 1 (Recommended):
+# pip install bpy
+#
+# Method 2 (If Method 1 fails):
+# 1. Download Blender
+# 2. Add Blender's Python path to PYTHONPATH
+# 3. Or use Blender's built-in Python interpreter
+#
+# Method 3 (For advanced users):
+# Build Blender from source with Python module support
+#
+# Platform-specific notes:
+# - Windows: May require Microsoft Visual C++ Redistributable
+# - macOS: Should work with pip install bpy
+# - Linux: May need additional system libraries (OpenGL, etc.)
